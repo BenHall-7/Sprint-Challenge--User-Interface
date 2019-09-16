@@ -66,6 +66,16 @@ p {
     line-height: 1.4;
 }
 
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: solid black 2px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+
 header {
     margin-bottom: 20px;
 }
@@ -108,7 +118,7 @@ header a {
     padding-bottom: 20px;  
 }
 
-.top-content .single-text-container {
+.single-text-container {
     padding: 0 20px;
     padding-bottom: 20px;
 }
@@ -148,6 +158,23 @@ header a {
 .b8 { background: hotpink; }
 .b9 { background: indigo; }
 .b10 { background: dodgerblue; }
+
+.about-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-box {
+    padding-top: 10px;
+    margin-bottom: 50px;
+    width: 370px;
+    border-bottom: 1px dashed black;
+}
+
+.about-box img {
+    margin-bottom: 10px;
+}
 
 .bottom-content {
     display: flex;

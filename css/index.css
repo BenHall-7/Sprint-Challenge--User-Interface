@@ -66,6 +66,20 @@ p {
     line-height: 1.4;
 }
 
+@keyframes button {
+    to {
+        color: white;
+        background: black;
+    }
+}
+
+@keyframes nav {
+    to {
+        padding-bottom: 5px;
+        border-bottom: solid black 1px;
+    }
+}
+
 a.button {
     display: inline-block;
     padding: 10px 20px;
@@ -74,6 +88,12 @@ a.button {
     border-radius: 10px;
     color: black;
     text-decoration: none;
+}
+
+a.button:hover {
+    animation-name: button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 header {
@@ -97,6 +117,12 @@ header a {
     font-size: 14px;
     text-decoration: none;
     color: black;
+}
+
+header a:hover {
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .container {

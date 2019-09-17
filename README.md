@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+    - It's the fine line between HTML tags that say nothing about their purpose and tags whose purpose is only known to the one who created it. For example, 'div' is often too general; a made-up tag like 'videocontainer' is developer-specific; but, something like 'section' delineates purpose. It allows other developers to work with it easily, as it is considered part of the standard set of HTML tags.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+    1. `block` display stretches the entire width of its parent container by default, `inline` stretches only to fit its contents.
+
+    2. `inline` elements can be embedded in other elements to handle some designs of page flow, but they cannot contain block elements.
 
 3. What are the 4 areas of the box model?
 
+    1. content (inner-most)
+
+    2. padding
+
+    3. border
+
+    4. margin (outer-most)
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+    - the "cross" axis (normally vertical, but technically depends on `flex-direction`)
+
 5. Explain why git is valuable to a team of developers.
+
+    - it allows developers to maintain a history of changes, allowing for an easy way to keep track of member contributions, or for developers to find and reverse past changes made in error. In addition, it allows synchronization of work between members (or conflicts thereof) to be handled
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

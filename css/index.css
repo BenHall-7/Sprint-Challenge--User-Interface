@@ -66,6 +66,65 @@ p {
     line-height: 1.4;
 }
 
+@keyframes button {
+    to {
+        color: white;
+        background: black;
+    }
+}
+
+@keyframes nav {
+    to {
+        padding-bottom: 5px;
+        border-bottom: solid black 1px;
+    }
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: solid black 2px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+a.button:hover {
+    animation-name: button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header .header-top {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+header a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -85,6 +144,11 @@ p {
     padding-bottom: 20px;  
 }
 
+.single-text-container {
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -100,16 +164,42 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.b1 { background: teal; }
+.b2 { background: gold; }
+.b3 { background: cadetblue; }
+.b4 { background: coral; }
+.b5 { background: crimson; }
+.b6 { background: forestgreen; }
+.b7 { background: darkorchid; }
+.b8 { background: hotpink; }
+.b9 { background: indigo; }
+.b10 { background: dodgerblue; }
+
+.about-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-box {
+    padding-top: 10px;
+    margin-bottom: 50px;
+    width: 370px;
+    border-bottom: 1px dashed black;
+}
+
+.about-box img {
+    margin-bottom: 10px;
 }
 
 .bottom-content {
@@ -124,6 +214,10 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#about-page-bottom {
+    margin-bottom: 20px;
 }
 
 footer {
